@@ -1,0 +1,172 @@
+:root {
+    --primary--color: #F7F7F7;
+    --secondary--color: #96C7C1;
+    --third--color: #FBD148;
+    --fouth--color: #D1E8E4;
+    --fifth--color: #2E4C6D;
+    --max--width: 1100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1rem/1.5 'Arial', sans-serif;
+    background: #F7F7F7;
+    color: grey;
+    /*no any scroll bar / stop above content*/
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+#home-header{
+background: var(--secondary--color);
+    padding: 4rem 0;
+}
+
+.container{
+    max-width: var(--max--width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+}
+#timeline ul{
+    background: var(--primary--color);
+    padding: 50px 0;
+}
+
+/*set the background for the line / div is a block*/
+#timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: var(--fifth--color);
+}
+/*box*/
+#timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 600px;
+    padding: 1rem;
+    background: var(--fouth--color);
+    transition: all 0.5s ease-in-out;
+/* hidden the screen by add class on elements on JS*/
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*right side*/
+/*set box in the right side by should odd box*/
+#timeline ul li:nth-child(odd) div{
+    left: 40px;
+    transform: translate(200px, 0);
+}
+
+/*set box to the left side by use even number*/
+#timeline ul li:nth-child(even) div{
+    left: -635px;
+    transform: translate(-200px, 0);
+}
+
+/*show boxes*/
+#timeline ul li.on div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+/*change dot to yello*/
+#timeline ul li.on:after{
+    background-color: var(--third--color);
+}
+
+/*dots in the middle of timeline*/
+#timeline ul li:after{
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    /*background: var(--third--color); MOVE TO ON CLASS to shows yellow everytime box hit in*/
+    transform: translateX(-50%); /*move it over and make a circle base on the left*/
+    border-radius: 50%;
+    transition: background 0.5s ease-in-out;
+}
+
+/*set the arrow direction on the right */
+#timeline div:before{
+    content: ' ';
+    position: absolute;
+    bottom: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/*right side arrow set shape of arrow*/
+#timeline ul li:nth-child(odd) div:before{
+    left: -15px;
+    border-width: 15px 30px  15px 0;
+    border-color: transparent var(--fouth--color);
+}
+
+/*set the arrow direction on the left*/
+#timeline ul li:nth-child(even) div:before{
+    right: -15px;
+    border-width: 15px 0 15px 30px;
+    border-color: transparent var(--fouth--color);
+}
+
+@media (max-width: 900px) {
+    #timeline ul li div{
+        width: 250px;
+    }
+    #timeline ul li:nth-child(even) div {
+    left: -284px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px)  {
+    #timeline ul li div{
+        width: 200px;
+    }
+    #timeline ul li:nth-child(even) div {
+        left: -400px;
+    }
+}
+
+@media (max-width: 600px) {
+    #timeline ul li {
+        margin-left: 20px;
+    }
+    #timeline ul li div{
+        width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
+    }
+    #timeline ul li:nth-child(even) div{
+        left: 40px;
+    }
+    #timeline ul li:nth-child(even) div:before{
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary--color) transparent transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
