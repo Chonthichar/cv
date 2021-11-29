@@ -461,7 +461,8 @@ h5 {
         padding-bottom: 50px;
     }
     #home-header {
-        width: 100%;
+        display: block;
+        max-width: 900px;
         margin: 0;
     }
     .back-g {
