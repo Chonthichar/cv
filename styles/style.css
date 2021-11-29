@@ -29,11 +29,12 @@ body {
     padding: 4rem 0;
     width: 100%;
     margin: 0;
+    grid-area: home-header;
 }
 .back-g {
-    max-width: 100%;
-    margin: 0 auto;
+    margin-top: 40px;
     text-align: center;
+
 }
 p {
     font-size: 20px;
@@ -231,6 +232,9 @@ h5 {
     text-align: center;
 }
 
+.container {
+    text-align: center;
+}
 #main-footer .social ul {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
@@ -461,9 +465,11 @@ h5 {
         padding-bottom: 50px;
     }
     #home-header {
-        display: block;
-        max-width: 900px;
+        grid-area: span;
+        min-width: 1250px;
         margin: 0;
+        text-align: center;
+        /*border: 0.2rem solid black;*/
     }
     .back-g {
         max-width: 100%;
