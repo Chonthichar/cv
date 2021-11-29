@@ -4,44 +4,310 @@
     --third--color: #FBD148;
     --fouth--color: #D1E8E4;
     --fifth--color: #2E4C6D;
+    --sixth--color: #E3F6F5;
     --max--width: 1100px;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font: normal 1rem/1.5 'Arial', sans-serif;
-    background: #F7F7F7;
+    background: #F7F7F7 no-repeat;
     color: grey;
     /*no any scroll bar / stop above content*/
     overflow-x: hidden;
     padding-bottom: 50px;
 }
-
-#home-header{
-background: var(--secondary--color);
+#home-header {
+    background: #9DDFD3;
     padding: 4rem 0;
+    width: 100%;
+    margin: 0;
 }
-
-.container{
-    max-width: var(--max--width);
+.back-g {
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
+p {
+    font-size: 20px;
+}
 
-h1{
+h1 {
     font-size: 2rem;
 }
-#timeline ul{
+
+h2 {
+    font-size: 60px;
+}
+
+h4 {
+    font-size: 23px;
+    padding-bottom: 0.5rem;
+    font-weight: unset;
+}
+
+h5 {
+    font-size: 23px;
+}
+
+.text-logo i {
+    color: #7952B3;
+}
+
+.container h1 {
+    color: #009DAE;
+}
+
+.container h2 {
+    color: #32C1CD;
+}
+
+/*profiles grid Profile articles*/
+.box-3 {
+    display: grid;
+    grid-template-areas: inherit;
+    grid-gap: 1rem;
+    /*border: 1rem solid black; */
+}
+
+.profile {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-areas:
+            'detail detail detail' /** 3 column*/
+            'content content sidebar'
+            'box-1 box-2 box-2'
+            'box-3 box-3 box-3'
+            'footer footer footer';
+    grid-gap: 0.5rem; /*create space between table*/
+    padding: 300px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    background: none;
+}
+
+.detail {
+    grid-area: detail; /*to make profile header to stay above columns*/
+    padding-top: 1rem;
+}
+
+.detail {
+    /*border: 1px black solid;*/
+    padding: 0.5rem;
+    background: none;
+    font-size: 40px;
+
+}
+
+.content, .sidebar, .box-1, .box-2, .box-3, .footer {
+    /*border: 1px black solid;*/
+    padding: 0 2rem 1rem;
+    /*background: #E3F6F5;*/
+}
+
+.detail {
+    grid-area: detail;
+    /*text-align: center;*/
+}
+
+.content {
+    grid-area: content;
+    text-align: justify;
+    text-align-last: auto;
+}
+
+.content h3 {
+    padding-bottom: 0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar h3 {
+    padding-bottom: 1rem;
+}
+
+.sidebar ul li {
+    /*padding-top: 1rem;*/
+    padding-left: 1rem;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.sidebar ul li i {
+    color: #17D7A0;
+}
+
+.box-1 {
+    grid-area: box-1
+}
+
+.box-2 {
+    grid-area: box-2
+}
+
+.box-3 {
+    grid-area: box-3
+}
+
+.box-1 h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.box-1 div {
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.box-1 div:hover {
+    color: #E3F6F5;
+}
+
+.bg-1 {
+    background: #FBD148;
+}
+
+.bg-2 {
+    background: #2E4C6D;
+}
+
+.bg-3 {
+    background: #E1E8EB;
+}
+
+.bg-4 {
+    background: #71DFE7;
+}
+
+.bg-5 {
+    background: cornflowerblue;
+}
+
+.bg-6 {
+    background: lightgrey;
+}
+
+.bg-7 {
+    background: coral;
+}
+
+.bg-7 {
+    background: plum;
+}
+
+.bg-8 {
+    background: darkseagreen;
+}
+
+.box-2 h3 {
+    padding-bottom: 1rem;
+}
+
+.box-2 ul li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.box-2 ul li i {
+    color: #C996CC;
+}
+
+.box-3 {
+    padding-bottom: 0;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+#main-footer .social ul {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    align-items: center;
+    margin: 0;
+    justify-self: center;
+    list-style-type: none;
+}
+
+#main-footer .social ul li:first-child {
+    margin-left: 0px;
+}
+
+#main-footer .social ul li a {
+    line-height: 0px;
+    color: gray;
+    text-align: center;
+    border: none;
+
+    /*border: none; !important;*/
+    /*background: #f7c08a;*/
+}
+
+#main-footer .text-logo {
+    font-size: 40px;
+}
+
+#main-footer.text-logo .an {
+    font-size: 20px;
+}
+
+/*}*/
+.gap {
+    margin-right: 10px;
+}
+
+#main-footer .social ul li a i {
+    font-size: 25px;
+    /*border: 1px solid #e0e0e0;*/
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.f-facebook:hover {
+    color: #ffffff;
+    background: #2a66b3;
+    border: 1px solid #2a66b3;
+}
+
+.i-instagram:hover {
+    color: #ffffff;
+    background: #f09433;
+}
+
+.t-twitter:hover {
+    color: #ffffff;
+    background: #35bbec;
+}
+
+.l-linkedin:hover {
+    color: #ffffff;
+    background: #007bb5;
+}
+
+
+#timeline ul {
     background: var(--primary--color);
     padding: 50px 0;
 }
 
 /*set the background for the line / div is a block*/
-#timeline ul li{
+
+#timeline ul {
+    background: var(--primary--color);
+    padding: 50px 0;
+}
+#timeline ul li {
     list-style: none;
     position: relative;
     width: 6px;
@@ -49,29 +315,31 @@ h1{
     padding-top: 50px;
     background: var(--fifth--color);
 }
+
 /*box*/
 #timeline ul li div {
     position: relative;
+    margin-left: 10px;
     bottom: 0;
-    width: 600px;
+    width: 500px;
     padding: 1rem;
     background: var(--fouth--color);
     transition: all 0.5s ease-in-out;
-/* hidden the screen by add class on elements on JS*/
+    /* hidden the screen by add class on elements on JS*/
     visibility: hidden;
     opacity: 0;
 }
 
 /*right side*/
 /*set box in the right side by should odd box*/
-#timeline ul li:nth-child(odd) div{
+#timeline ul li:nth-child(odd) div {
     left: 40px;
     transform: translate(200px, 0);
 }
 
 /*set box to the left side by use even number*/
-#timeline ul li:nth-child(even) div{
-    left: -635px;
+#timeline ul li:nth-child(even) div {
+    left: -530px;
     transform: translate(-200px, 0);
 }
 
@@ -81,14 +349,15 @@ h1{
     visibility: visible;
     opacity: 1;
 }
+
 /*change dot to yello*/
-#timeline ul li.on:after{
+#timeline ul li.on:after {
     background-color: var(--third--color);
 }
 
 /*dots in the middle of timeline*/
-#timeline ul li:after{
-    content: ' ';
+#timeline ul li:after {
+    content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -101,8 +370,8 @@ h1{
 }
 
 /*set the arrow direction on the right */
-#timeline div:before{
-    content: ' ';
+#timeline div:before {
+    content: '';
     position: absolute;
     bottom: 30px;
     width: 0;
@@ -111,32 +380,34 @@ h1{
 }
 
 /*right side arrow set shape of arrow*/
-#timeline ul li:nth-child(odd) div:before{
+#timeline ul li:nth-child(odd) div:before {
     left: -15px;
-    border-width: 15px 30px  15px 0;
-    border-color: transparent var(--fouth--color);
+    border-width: 15px 30px 15px 0;
+    border-color: transparent var(--fouth--color) transparent transparent;
 }
 
 /*set the arrow direction on the left*/
-#timeline ul li:nth-child(even) div:before{
+#timeline ul li:nth-child(even) div:before {
     right: -15px;
     border-width: 15px 0 15px 30px;
-    border-color: transparent var(--fouth--color);
+    border-color: transparent transparent transparent var(--fouth--color);
 }
 
 @media (max-width: 900px) {
-    #timeline ul li div{
+    #timeline ul li div {
         width: 250px;
     }
+
     #timeline ul li:nth-child(even) div {
-    left: -284px;
+        left: -284px;
     }
 }
 
-@media (min-width: 501px) and (max-width: 768px)  {
-    #timeline ul li div{
-        width: 200px;
+@media (min-width: 501px) and (max-width: 768px) {
+    #timeline ul li div {
+        width: 300px;
     }
+
     #timeline ul li:nth-child(even) div {
         left: -400px;
     }
@@ -146,21 +417,44 @@ h1{
     #timeline ul li {
         margin-left: 20px;
     }
-    #timeline ul li div{
+
+    #timeline ul li div {
         width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
     }
-    #timeline ul li:nth-child(even) div{
+
+    #timeline ul li:nth-child(even) div {
         left: 40px;
     }
-    #timeline ul li:nth-child(even) div:before{
+
+    #timeline ul li:nth-child(even) div:before {
         left: -15px;
         border-width: 8px 16px 8px 0;
         border-color: transparent var(--secondary--color) transparent transparent;
     }
 }
 
-
-
+@media (min-width: 375px) and (max-width: 812px) {
+    .profile{
+        grid-template-areas:
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+    }
+}
+@media (max-width: 500px) {
+    .profile{
+        grid-template-areas:
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+    }
+}
 
 
 
