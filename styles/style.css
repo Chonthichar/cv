@@ -312,6 +312,7 @@ h5 {
 
 #timeline ul {
     background: var(--primary--color);
+    /*background: red;*/
     padding: 50px 0;
 }
 #timeline ul li {
@@ -321,6 +322,7 @@ h5 {
     margin: 0 auto;
     padding-top: 50px;
     background: var(--fifth--color);
+    /*background: red;*/
 }
 
 /*box*/
@@ -408,6 +410,9 @@ h5 {
     #timeline ul li:nth-child(even) div {
         left: -284px;
     }
+    #timeline ul li{
+        margin-left: 100px;
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
@@ -422,7 +427,7 @@ h5 {
 
 @media screen and (max-width: 600px) {
     #timeline ul li {
-        margin-left: 20px;
+        margin-left: 100px;
     }
 
     #timeline ul li div {
@@ -466,7 +471,7 @@ h5 {
     }
     #home-header {
         grid-area: span;
-        min-width: 1250px;
+        min-width: 1200px;
         margin: 0;
         text-align: center;
         /*border: 0.2rem solid black;*/
@@ -475,6 +480,9 @@ h5 {
         max-width: 100%;
         margin: 0 auto;
         text-align: center;
+    }
+    #timeline ul li{
+        left: 70px;
     }
 }
 /*@media screen and (max-width: 600px) {*/
