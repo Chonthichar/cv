@@ -402,7 +402,7 @@ h5 {
     border-color: transparent transparent transparent var(--fouth--color);
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     #timeline ul li div {
         width: 250px;
     }
@@ -415,7 +415,25 @@ h5 {
     }
 }
 
-@media screen and (min-width: 501px) and (max-width: 768px) {
+@media  (min-width: 501px) and (max-width: 768px) {
+
+    body {
+        margin: 0 auto 0 auto;
+        max-width: 1200px;
+        padding-bottom: 50px;
+    }
+    #home-header {
+        grid-area: span;
+        min-width: 1200px;
+        margin: 0;
+        text-align: center;
+        /*border: 0.2rem solid black;*/
+    }
+    .back-g {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
     #timeline ul li div {
         width: 300px;
     }
@@ -423,11 +441,32 @@ h5 {
     #timeline ul li:nth-child(even) div {
         left: -400px;
     }
+    #timeline ul li{
+        left: 50px
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media(max-width: 600px) {
+
+    body {
+        margin: 0 auto 0 auto;
+        max-width: 1200px;
+        padding-bottom: 50px;
+    }
+    #home-header {
+        grid-area: span;
+        min-width: 1200px;
+        margin: 0;
+        text-align: center;
+        /*border: 0.2rem solid black;*/
+    }
+    .back-g {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
     #timeline ul li {
-        margin-left: 100px;
+        margin-left: 70px;
     }
 
     #timeline ul li div {
@@ -445,7 +484,7 @@ h5 {
     }
 }
 
-@media screen and (min-width: 370px) and (max-width: 1200px) {
+@media (min-width: 370px) and (max-width: 1200px) {
     .profile{
         grid-template-areas:
             'content'
