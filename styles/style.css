@@ -21,7 +21,7 @@ body {
     /*no any scroll bar / stop above content*/
     overflow-x: hidden;
     margin: 0px auto 0px auto;
-    max-width: 1100px
+    max-width: 1100px;
     padding-bottom: 50px;
 }
 #home-header {
