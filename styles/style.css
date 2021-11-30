@@ -86,23 +86,24 @@ h5 {
     display: grid;
     /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     grid-template-areas:
-      'content'
-   'sidebar'
-   'box-1'
-   'box-2'
-   'box-3'
-   'footer';
+   /*   'content'*/
+   /*'sidebar'*/
+   /*'box-1'*/
+   /*'box-2'*/
+   /*'box-3'*/
+   /*'footer';*/
 
-            /*'detail detail detail' !** 3 column*!*/
-            /*'content content sidebar'*/
-            /*'box-1 box-2 box-2'*/
-            /*'box-3 box-3 box-3'*/
-            /*'footer footer footer';*/
-    grid-gap: 0.5rem; /*create space between table*/
-    /*padding: 300px;*/
+            'detail detail detail' /** 3 column*/
+            'content content sidebar'
+            'box-1 box-2 box-2'
+            'box-3 box-3 box-3'
+            'footer footer footer';
+    grid-gap: 0.1rem; /*create space between table*/
+    padding: 10px;
     padding-top: 5px;
     padding-bottom: 0px;
     background: none;
+    border: 0.1rem solid black;
 }
 
 .detail {
@@ -120,7 +121,7 @@ h5 {
 
 .content, .sidebar, .box-1, .box-2, .box-3, .footer {
     /*border: 1px black solid;*/
-    padding: 0 2rem 1rem;
+    padding: 0 1rem 1rem;
     /*background: #E3F6F5;*/
 }
 
@@ -149,13 +150,17 @@ h5 {
 
 .sidebar ul li {
     /*padding-top: 1rem;*/
-    padding-left: 1rem;
+    padding-left: 0.1rem;
     font-size: 18px;
     list-style-type: none;
 }
 
 .sidebar ul li i {
     color: #17D7A0;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten{
+    color: orange;
 }
 
 .box-1 {
