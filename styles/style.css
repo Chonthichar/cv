@@ -21,7 +21,7 @@ body {
     /*no any scroll bar / stop above content*/
     overflow-x: hidden;
     margin: 0px auto 0px auto;
-    /*max-width: 830px;*/
+    max-width: 1100px
     padding-bottom: 50px;
 }
 #home-header {
@@ -402,7 +402,7 @@ h5 {
     border-color: transparent transparent transparent var(--fouth--color);
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     #timeline ul li div {
         width: 250px;
     }
@@ -415,7 +415,7 @@ h5 {
     }
 }
 
-@media  (min-width: 501px) and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
 
     body {
         margin: 0 auto 0 auto;
@@ -446,7 +446,7 @@ h5 {
     }
 }
 
-@media(max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     body {
         margin: 0 auto 0 auto;
@@ -484,7 +484,7 @@ h5 {
     }
 }
 
-@media (min-width: 370px) and (max-width: 1200px) {
+@media screen and (min-width: 370px) and (max-width: 1200px) {
     .profile{
         grid-template-areas:
             'content'
