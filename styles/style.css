@@ -36,7 +36,7 @@ body,html {
     padding: 20px 15px 20px 15px;
     margin-right: auto;
     margin-left: auto;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 #home-header {
     padding: 0.1rem 0;
@@ -541,7 +541,7 @@ h5 {
             'box-2'
             'box-3'
             'footer';
-        line-height: 4rem;
+        line-height: 5rem;
     }
 
     #timeline ul li {
@@ -597,7 +597,7 @@ h5 {
         color: #96C7C1;
     }
     p, .sidebar ul li, .box-1 div, h2, h3, h4, h5, .box-2 ul li{
-        font-size: 40px;
+        font-size: 50px;
     }
 }
 
