@@ -16,28 +16,38 @@
 
 body {
     font: normal 1rem/1.5 'Arial', sans-serif;
-    background: #F7F7F7 no-repeat;
+    background: white no-repeat;
     color: grey;
     /*no any scroll bar / stop above content*/
     overflow-x: hidden;
     margin: 0px auto 0px auto;
-    max-width: 1100px;
+    max-width: 1200px;
     /*width: 100%;*/
     /*max-width: 600%;*/
     /*max-width: 100%;*/
     padding-bottom: 50px;
     line-height: 1.42857143rem;
 }
+
 #home-header {
-    background: #9DDFD3;
-    padding: 4rem 0;
-    width: 100%;
+    padding: 2rem 0;
     margin: 0;
     grid-area: home-header;
+    line-height: 5rem;
 }
-.back-g {
+.back-g h1{
+    font-size: 80px;
     margin-top: 40px;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    /*margin-left: 50px;*/
+
+}
+.back-g h2{
+    font-size: 80px;
+    margin-left: 60px;
+    color: #2a66b3;
+    position: relative;
 
 }
 p {
@@ -506,8 +516,8 @@ h5 {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px){
-    .profile{
+@media (min-width: 769px) and (max-width: 1200px) {
+    .profile {
         grid-template-areas:
             'content'
             'sidebar'
@@ -516,12 +526,15 @@ h5 {
             'box-3'
             'footer';
     }
-    #timeline ul li{
+
+    #timeline ul li {
         left: 70px;
     }
+
     #timeline ul li {
         margin-left: 70px;
     }
+
     #timeline ul li div {
         width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
     }
@@ -535,19 +548,53 @@ h5 {
         border-width: 8px 16px 8px 0;
         border-color: transparent var(--secondary--color) transparent transparent;
     }
-}
-@media screen and (max-width: 600px) {
-    .profile{
-        grid-template-areas:
+
+    #home-header {
+        padding: 2rem 3rem 2rem 5rem;
+        margin: 0;
+        grid-area: home-header;
+        line-height: 8rem;
+        margin-top: 180px;
+    }
+
+    .back-g h1 {
+        font-size: 180px;
+        margin-top: 40px;
+        text-align: left;
+        position: relative;
+        margin-left: 50px;
+
+    }
+
+    .back-g h2 {
+        font-size: 200px;
+        margin-left: 60px;
+        color: #2a66b3;
+        position: relative;
+    }
+
+    @media screen and (max-width: 600px) {
+        .profile {
+            grid-template-areas:
             'content'
             'sidebar'
             'box-1'
             'box-2'
             'box-3'
             'footer';
+            margin: 100px;
+            /*margin-left: 50px;*/
+            /*padding-left: 100px;*/
+            /*padding-top: 5px;*/
+            /*padding-bottom: 0px;*/
+            /*background: none;*/
+            /*!*border: 0.1rem solid black;*!*/
+        }
+        body{
+         margin: 30px;
+        }
     }
 }
-
 
 
 
