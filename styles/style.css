@@ -574,7 +574,8 @@ h5 {
         line-height: 10rem;
         text-align: center;
     }
-    .back-g h1{
+
+    .back-g h1 {
         font-size: 180px;
         margin-top: 40px;
         text-align: left;
@@ -582,7 +583,8 @@ h5 {
         /*margin-left: 50px;*/
 
     }
-    .back-g h2{
+
+    .back-g h2 {
         font-size: 180px;
         text-align: left;
         /*margin-left: 60px;*/
@@ -590,11 +592,15 @@ h5 {
         position: relative;
     }
 
-    .back-g h3{
+    .back-g h3 {
         font-size: 100px;
         text-align: left;
         color: #96C7C1;
     }
+    p {
+        font-size: 40px;
+    }
+}
 
     @media screen and (max-width: 600px) {
         .profile {
@@ -606,11 +612,6 @@ h5 {
             'box-3'
             'footer';
         }
-        .profile{
-
-        }
-
-    }
 }
 
 
