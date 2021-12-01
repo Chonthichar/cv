@@ -171,7 +171,7 @@ h5 {
 }
 
 .sidebar h3 {
-    padding-bottom: 1rem;
+    padding-bottom: 1.4rem;
 }
 
 .sidebar ul li {
@@ -268,19 +268,14 @@ h5 {
 .box-3 {
     padding-bottom: 0;
 }
-
-.footer {
-    grid-area: footer;
-    text-align: center;
-}
-
 .container {
     text-align: center;
 }
+
 #main-footer .social ul {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 1rem;
+    padding: 0rem;
     align-items: center;
     margin: 0;
     justify-self: center;
@@ -292,15 +287,42 @@ h5 {
 }
 
 #main-footer .social ul li a {
-    line-height: 0px;
     color: gray;
     text-align: center;
-    border: none;
 
-    /*border: none; !important;*/
-    /*background: #f7c08a;*/
+    color:#fff;
+    background: black;
+    border-radius:4px;
+    text-decoration:none;
+    font-family:fontawesome;
+    position: relative;
+    display: inline-block;
+    /*width:70px;*/
+    /*height:28px;*/
+    /*padding-top:12px;*/
+    margin:0 2px;
+    -o-transition:all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-font-smoothing: antialiased;
 }
 
+.g-github .fab:hover {
+    background: red;
+}
+
+.l-linkedin .fa:hover {
+    background:  #007bb5;;
+}
+
+.i-instagram .fab:hover {
+    background:  #f09433;
+}
+
+.t-twitter .fa:hover {
+    background: #35bbec;
+}
 #main-footer .text-logo {
     font-size: 80px;
 }
@@ -317,29 +339,40 @@ h5 {
 #main-footer .social ul li a i {
     font-size: 50px;
     /*border: 1px solid #e0e0e0;*/
-    width: 100%;
-    height: 40px;
 }
+.container h2{
+    padding-bottom: 40px;
+    font-size: 10px;
+}
+.contact h4, .contact p{
+    background: none;
+    text-align: center;
+    padding-top: 20px;
+}
+.contact p{
+    padding-top: 0;
+    color: #7952B3;
+    text-align: center;
+}
+/*.f-facebook:hover {*/
+/*    color: #ffffff;*/
+/*    background: black;*/
 
-.f-facebook:hover {
-    color: #ffffff;
-    background: black;
-    border: 1px solid #2a66b3;
-}
+/*}*/
 
-.i-instagram:hover {
-    color: #ffffff;
-    background: #f09433;
-}
+/*.i-instagram:hover {*/
+/*    color: #ffffff;*/
+/*    background: #f09433;*/
+/*}*/
 
-.t-twitter:hover {
-    color: #ffffff;
-    background: #35bbec;
-}
-.l-linkedin:hover {
-    color: #ffffff;
-    background: #007bb5;
-}
+/*.t-twitter:hover {*/
+/*    color: #ffffff;*/
+/*    background: #35bbec;*/
+/*}*/
+/*.l-linkedin:hover {*/
+/*    color: #ffffff;*/
+/*    background: #007bb5;*/
+/*}*/
 
 
 #timeline ul {
