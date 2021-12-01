@@ -553,7 +553,8 @@ h5 {
     }
 
     #timeline ul li div {
-        width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
+        width: calc(100vw - 90px); /* to make the box fit with the screen by using calc and taking 90px away*/
+        line-height: 4rem;
     }
 
     #timeline ul li:nth-child(even) div {
