@@ -98,7 +98,7 @@
             'box-2'
             'box-3'
             'footer';
-        line-height: 5rem;
+        line-height: 4rem;
     }
 
     #timeline ul li {
@@ -133,7 +133,7 @@
     }
 
     .back-g h1 {
-        font-size: 180px;
+        font-size: 160px;
         margin-top: 40px;
         text-align: left;
         position: relative;
@@ -142,7 +142,7 @@
     }
 
     .back-g h2 {
-        font-size: 180px;
+        font-size: 160px;
         text-align: left;
         /*margin-left: 60px;*/
         color: #2a66b3;
@@ -156,8 +156,13 @@
     }
 
     p, .sidebar ul li, .box-1 div, h2, h3, h4, h5, .box-2 ul li {
-        font-size: 50px;
+        font-size: 40px;
     }
+
+    /*#main-footer .social ul li a {*/
+    /*    width:50px;*/
+    /*    height:40px;*/
+    /*}*/
     .contact p {
         padding-top: 40px;
         color: #7952B3;
