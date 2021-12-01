@@ -442,8 +442,15 @@ h5 {
                     'footer';
     }
 }
+@media (min-width: 1201px) {
+    .widescreen h1{
+     /*display: block;*/
+    }
+}
 
-@media only screen and (max-width: 768px){
+
+@media(min-width: 501px) and (max-width: 768px){
+
         #timeline ul li {
             margin-left: 70px;
         }
@@ -499,7 +506,7 @@ h5 {
     }
 }
 
-@media screen and (min-width: 370px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px){
     .profile{
         grid-template-areas:
             'content'
@@ -509,34 +516,24 @@ h5 {
             'box-3'
             'footer';
     }
-    .profile{
-        /*width: 100%;*/
-        /*margin-right: 100px;*/
-        /*margin-left: 100px;*/
-        /*margin-top: 50px;*/
-        /*!*justify-content: center;*!*/
-        /*padding: 10px 10px 10px 10px;*/
-        /*!*border: 10px solid black;*!*/
-    }
-    body {
-        margin: 0 auto 0 auto;
-        max-width: 1200px;
-        padding-bottom: 50px;
-    }
-    #home-header {
-        grid-area: span;
-        min-width: 1200px;
-        margin: 0;
-        text-align: center;
-        /*border: 0.2rem solid black;*/
-    }
-    .back-g {
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
     #timeline ul li{
         left: 70px;
+    }
+    #timeline ul li {
+        margin-left: 70px;
+    }
+    #timeline ul li div {
+        width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: 40px;
+    }
+
+    #timeline ul li:nth-child(even) div:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary--color) transparent transparent;
     }
 }
 @media screen and (max-width: 600px) {
