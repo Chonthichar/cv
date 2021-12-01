@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html{
+    margin: 0;
+    width: 1200px
+}
 body {
     font: normal 1rem/1.5 'Arial', sans-serif;
     background: white no-repeat;
@@ -21,12 +25,16 @@ body {
     /*no any scroll bar / stop above content*/
     overflow-x: hidden;
     margin: 0px auto 0px auto;
-    max-width: 1200px;
+    width: 1200px;
+    padding: 50px;
     /*width: 100%;*/
     /*max-width: 600%;*/
     /*max-width: 100%;*/
     padding-bottom: 50px;
     line-height: 1.42857143rem;
+}
+.main{
+    width: 1200px;
 }
 
 #home-header {
@@ -582,17 +590,11 @@ h5 {
             'box-2'
             'box-3'
             'footer';
-            margin: 100px;
-            /*margin-left: 50px;*/
-            /*padding-left: 100px;*/
-            /*padding-top: 5px;*/
-            /*padding-bottom: 0px;*/
-            /*background: none;*/
-            /*!*border: 0.1rem solid black;*!*/
         }
-        body{
-         margin: 30px;
+        .profile{
+
         }
+
     }
 }
 
