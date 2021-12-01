@@ -1,3 +1,6 @@
+'use strict'
+
+//timeline
 const anime = document.querySelectorAll('#timeline li');
 
 const screenView = box => {

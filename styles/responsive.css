@@ -1,0 +1,173 @@
+@media only screen and (max-width: 900px) {
+    #timeline ul li div {
+        width: 250px;
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: -284px;
+    }
+
+    #timeline ul li {
+        margin-left: 100px;
+    }
+
+    .profile {
+        grid-template-areas:
+                    'content'
+                    'sidebar'
+                    'box-1'
+                    'box-2'
+                    'box-3'
+                    'footer';
+    }
+}
+
+@media (min-width: 1201px) {
+    .widescreen h1 {
+        /*display: block;*/
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+
+    #timeline ul li {
+        margin-left: 70px;
+    }
+
+    #timeline ul li div {
+        width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: 40px;
+    }
+
+    #timeline ul li:nth-child(even) div:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary--color) transparent transparent;
+    }
+
+    .profile {
+        grid-template-areas:
+                    'content'
+                    'sidebar'
+                    'box-1'
+                    'box-2'
+                    'box-3'
+                    'footer';
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #timeline ul li {
+        margin-left: 70px;
+    }
+
+    #timeline ul li div {
+        width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: 40px;
+    }
+
+    #timeline ul li:nth-child(even) div:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary--color) transparent transparent;
+    }
+
+    .profile {
+        grid-template-areas:
+                    'content'
+                    'sidebar'
+                    'box-1'
+                    'box-2'
+                    'box-3'
+                    'footer';
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .profile {
+        grid-template-areas:
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+        line-height: 5rem;
+    }
+
+    #timeline ul li {
+        left: 70px;
+    }
+
+    #timeline ul li {
+        margin-left: 70px;
+    }
+
+    #timeline ul li div {
+        width: calc(100vw - 90px); /* to make the box fit with the screen by using calc and taking 90px away*/
+        line-height: 4rem;
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: 40px;
+    }
+
+    #timeline ul li:nth-child(even) div:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary--color) transparent transparent;
+    }
+
+    #home-header {
+        padding: 0.1rem 0;
+        margin: 0;
+        grid-area: home-header;
+        line-height: 13rem;
+        text-align: center;
+    }
+
+    .back-g h1 {
+        font-size: 180px;
+        margin-top: 40px;
+        text-align: left;
+        position: relative;
+        /*margin-left: 50px;*/
+
+    }
+
+    .back-g h2 {
+        font-size: 180px;
+        text-align: left;
+        /*margin-left: 60px;*/
+        color: #2a66b3;
+        position: relative;
+    }
+
+    .back-g h3 {
+        font-size: 100px;
+        text-align: left;
+        color: #96C7C1;
+    }
+
+    p, .sidebar ul li, .box-1 div, h2, h3, h4, h5, .box-2 ul li {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile {
+        grid-template-areas:
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+    }
+}
