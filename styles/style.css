@@ -14,13 +14,13 @@
     box-sizing: border-box;
 }
 
-html{
-    margin: 0;
-    width: 1200px;
-}
-body {
+/*html{*/
+/*    margin: 0;*/
+/*    width: 1200px;*/
+/*}*/
+body,html {
     font: normal 1rem/1.5 'Arial', sans-serif;
-    background: white no-repeat;
+    background: var(--primary--color);
     color: grey;
     /*no any scroll bar / stop above content*/
     overflow-x: hidden;
@@ -34,14 +34,18 @@ body {
     line-height: 1.42857143rem;
 }
 .main{
-    width: 1200px;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 15px 20px 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 #home-header {
-    padding: 2rem 0;
+    padding: 0.1rem 0;
     margin: 0;
     grid-area: home-header;
     line-height: 5rem;
+    text-align: center;
 }
 .back-g h1{
     font-size: 80px;
@@ -53,10 +57,16 @@ body {
 }
 .back-g h2{
     font-size: 80px;
-    margin-left: 60px;
+    text-align: left;
+    /*margin-left: 60px;*/
     color: #2a66b3;
     position: relative;
+}
 
+.back-g h3{
+    font-size: 60px;
+   text-align: left;
+    color: #96C7C1;
 }
 p {
     font-size: 20px;
@@ -121,7 +131,7 @@ h5 {
     padding-top: 5px;
     padding-bottom: 0px;
     background: none;
-    border: 0.1rem solid black;
+    /*border: 0.1rem solid black;*/
 }
 
 .detail {
@@ -524,79 +534,84 @@ h5 {
     }
 }
 
-/*@media (min-width: 769px) and (max-width: 1200px) {*/
-/*    .profile {*/
-/*        grid-template-areas:*/
-/*            'content'*/
-/*            'sidebar'*/
-/*            'box-1'*/
-/*            'box-2'*/
-/*            'box-3'*/
-/*            'footer';*/
-/*    }*/
+@media (min-width: 769px) and (max-width: 1200px) {
+    .profile {
+        grid-template-areas:
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+    }
 
-/*    #timeline ul li {*/
-/*        left: 70px;*/
-/*    }*/
+    #timeline ul li {
+        left: 70px;
+    }
 
-/*    #timeline ul li {*/
-/*        margin-left: 70px;*/
-/*    }*/
+    #timeline ul li {
+        margin-left: 70px;
+    }
 
-/*    #timeline ul li div {*/
-/*        width: calc(100vw - 90px) !* to make the box fit with the screen by using calc and taking 90px away*!*/
-/*    }*/
+    #timeline ul li div {
+        width: calc(100vw - 90px) /* to make the box fit with the screen by using calc and taking 90px away*/
+    }
 
-/*    #timeline ul li:nth-child(even) div {*/
-/*        left: 40px;*/
-/*    }*/
+    #timeline ul li:nth-child(even) div {
+        left: 40px;
+    }
 
-/*    #timeline ul li:nth-child(even) div:before {*/
-/*        left: -15px;*/
-/*        border-width: 8px 16px 8px 0;*/
-/*        border-color: transparent var(--secondary--color) transparent transparent;*/
-/*    }*/
+    #timeline ul li:nth-child(even) div:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary--color) transparent transparent;
+    }
 
-/*    #home-header {*/
-/*        padding: 2rem 3rem 2rem 5rem;*/
-/*        margin: 0;*/
-/*        grid-area: home-header;*/
-/*        line-height: 8rem;*/
-/*        margin-top: 180px;*/
-/*    }*/
+    #home-header {
+        padding: 0.1rem 0;
+        margin: 0;
+        grid-area: home-header;
+        line-height: 10rem;
+        text-align: center;
+    }
+    .back-g h1{
+        font-size: 180px;
+        margin-top: 40px;
+        text-align: left;
+        position: relative;
+        /*margin-left: 50px;*/
 
-/*    .back-g h1 {*/
-/*        font-size: 180px;*/
-/*        margin-top: 40px;*/
-/*        text-align: left;*/
-/*        position: relative;*/
-/*        margin-left: 50px;*/
+    }
+    .back-g h2{
+        font-size: 180px;
+        text-align: left;
+        /*margin-left: 60px;*/
+        color: #2a66b3;
+        position: relative;
+    }
 
-/*    }*/
+    .back-g h3{
+        font-size: 100px;
+        text-align: left;
+        color: #96C7C1;
+    }
 
-/*    .back-g h2 {*/
-/*        font-size: 200px;*/
-/*        margin-left: 60px;*/
-/*        color: #2a66b3;*/
-/*        position: relative;*/
-/*    }*/
+    @media screen and (max-width: 600px) {
+        .profile {
+            grid-template-areas:
+            'content'
+            'sidebar'
+            'box-1'
+            'box-2'
+            'box-3'
+            'footer';
+        }
+        .profile{
 
-/*    @media screen and (max-width: 600px) {*/
-/*        .profile {*/
-/*            grid-template-areas:*/
-/*            'content'*/
-/*            'sidebar'*/
-/*            'box-1'*/
-/*            'box-2'*/
-/*            'box-3'*/
-/*            'footer';*/
-/*        }*/
-/*        .profile{*/
+        }
 
-/*        }*/
-
-/*    }*/
-/*}*/
+    }
+}
 
 
 
