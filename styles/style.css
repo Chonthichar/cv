@@ -544,6 +544,7 @@ h5 {
             'box-2'
             'box-3'
             'footer';
+        line-height: 3rem;
     }
 
     #timeline ul li {
@@ -572,7 +573,7 @@ h5 {
         padding: 0.1rem 0;
         margin: 0;
         grid-area: home-header;
-        line-height: 14rem;
+        line-height: 13rem;
         text-align: center;
     }
 
@@ -598,7 +599,7 @@ h5 {
         text-align: left;
         color: #96C7C1;
     }
-    p, .sidebar ul li {
+    p, .sidebar ul li, .box-1 div {
         font-size: 30px;
     }
 }
