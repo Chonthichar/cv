@@ -571,7 +571,7 @@ h5 {
         padding: 0.1rem 0;
         margin: 0;
         grid-area: home-header;
-        line-height: 10rem;
+        line-height: 13rem;
         text-align: center;
     }
 
@@ -597,7 +597,7 @@ h5 {
         text-align: left;
         color: #96C7C1;
     }
-    p {
+    p, .sidebar ul li {
         font-size: 40px;
     }
 }
