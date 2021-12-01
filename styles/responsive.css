@@ -158,6 +158,11 @@
     p, .sidebar ul li, .box-1 div, h2, h3, h4, h5, .box-2 ul li {
         font-size: 50px;
     }
+    .contact p {
+        padding-top: 35px;
+        color: #7952B3;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
