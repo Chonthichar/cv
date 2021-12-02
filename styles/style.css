@@ -282,6 +282,7 @@ h5 {
 }
 
 #main-footer .social ul li a {
+    font-size: 50px;
     color: gray;
     text-align: center;
     color: #fff;
@@ -302,7 +303,7 @@ h5 {
 }
 
 .g-github .fab:hover {
-    background: red;
+    background: black;
 }
 
 .l-linkedin .fa:hover {
@@ -331,8 +332,8 @@ h5 {
 }
 
 #main-footer .social ul li a i {
-    font-size: 50px;
-    /*border: 1px solid #e0e0e0;*/
+    font-size: 90px;
+    border: 1px solid #e0e0e0;
 }
 
 .container h2 {
